@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Type extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'main_programming_language'
+    ];
+
+    public function portfolio() {
+        return $this -> belongsTo(Portfolio :: class);
+    }
 }
