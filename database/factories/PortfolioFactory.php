@@ -18,7 +18,7 @@ class PortfolioFactory extends Factory
     {
         return [
             "name_project" => fake() -> word(),
-            "main_programming_language" => fake() -> randomElement(['Java', 'Php', 'JavaScript', 'C', 'C++']),
+            // "main_programming_language" => fake() -> randomElement(['Java', 'Php', 'JavaScript', 'C', 'C++']),
             "description" => fake() -> paragraph(),
             "complexity" => fake() -> randomElement(['Easy', 'Medium', 'Hard'])
         ];
