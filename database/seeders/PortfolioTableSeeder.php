@@ -16,7 +16,7 @@ class PortfolioTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        Portfolio :: factory() -> count(10) -> create();
+
+        $portfolios = Portfolio :: factory() -> count(10) -> make();
     }
 }
